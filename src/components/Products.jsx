@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Prod from '../assets/prod.jpg';
+import Prod from '../assets/product1.jpeg';
 
 const productData = [
   {
@@ -14,6 +14,38 @@ const productData = [
     id: 2,
     image: `${Prod}`,
     productName: 'Product 2',
+    brand: 'Brand B',
+    price: 99,
+    originalPrice: 129,
+  },
+  {
+    id: 3,
+    image: `${Prod}`,
+    productName: 'Product 3',
+    brand: 'Brand B',
+    price: 99,
+    originalPrice: 129,
+  },
+  {
+    id: 4,
+    image: `${Prod}`,
+    productName: 'Product 4',
+    brand: 'Brand B',
+    price: 99,
+    originalPrice: 129,
+  },
+  {
+    id: 5,
+    image: `${Prod}`,
+    productName: 'Product 5',
+    brand: 'Brand B',
+    price: 99,
+    originalPrice: 129,
+  },
+  {
+    id: 5,
+    image: `${Prod}`,
+    productName: 'Product 6',
     brand: 'Brand B',
     price: 99,
     originalPrice: 129,
@@ -35,11 +67,11 @@ const Products = () => {
       setPopupVisible(true);
     };
     return (
-      <div key={id} className="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+      <div key={id} id='products' className="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
           <img
             src={image}
             alt={productName}
-            className="h-80 w-72 object-cover rounded-t-xl"
+            className="h-72 w-72 object-cover rounded-t-xl"
           />
           <div className="px-4 py-3 w-72">
             <span className="text-gray-400 mr-3 uppercase text-xs">{brand}</span>
@@ -81,15 +113,15 @@ const Products = () => {
   
     if (!popupVisible || !selectedProduct) return null;
   
-    const popupClassName = `fixed top-0 left-0 w-full h-full flex justify-center items-center bg-black bg-opacity-50 transition-opacity duration-300 ${
+    const popupClassName = `fixed top-0 left-0 w-full h-full flex justify-center items-center bg-black bg-opacity-50 transition-opacity duration-300  ${
       closing ? 'opacity-0' : 'opacity-100'
-    }`;
+    }` ;
   
     return (
-      <div className={popupClassName}>
+      <div className={popupClassName} style={{ zIndex : '10000'}}>
         <div className="flex flex-col sm:flex-row bg-white p-8 rounded-md w-full sm:max-w-2xl md:max-w-3xl lg:max-w-4xl xl:max-w-5xl">
           <div className="mb-4 sm:mr-4 sm:mb-0">
-            <img src={selectedProduct.image} className="w-full max-w-md mx-auto" alt="" />
+            <img src={selectedProduct.image} className="w-9/12 max-w-md mx-auto" alt="" />
           </div>
           <div className="w-full max-w-md mx-auto">
             <h2 className="text-xl font-bold mb-4">{selectedProduct.productName}</h2>

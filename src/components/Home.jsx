@@ -9,14 +9,13 @@ const Home = () => {
     backgroundImage: `linear-gradient(rgba(0, 0, 0, 1), transparent), url(${backGroundImage})`,
     backgroundSize: 'cover',
     backgroundPosition: '78%',
-
   };
   
   return (
     <div className='text-white ' style={styles}>
       <div className='max-w-[800px] mt-[-96px] w-full h-screen mx-auto text-center flex flex-col justify-center'>
-        <p className='text-[#00df9a] font-bold p-2'>
-        Elevate Your Ride, Elevate Your Life.
+        <p className='text-[#00df9a] font-bold p-2 text-2xl mt-12'>
+        ElMaher Trade Company
         </p>
         <h1 className='md:text-7xl sm:text-6xl text-4xl font-bold md:py-6'>
         Unleash Your Spirit on Two Wheels.
@@ -33,7 +32,10 @@ const Home = () => {
             loop
           />
         </div>
-        <button className='bg-[#00df9a] w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-black'>Get Started</button>
+        
+        <a href="#products">
+        <button className='bg-[#00df9a] w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-black'>Get Started </button>
+        </a>
       </div>
     </div>
   );
