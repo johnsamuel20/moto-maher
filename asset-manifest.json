@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/maher-moto/static/css/main.d8287be4.css",
-    "main.js": "/maher-moto/static/js/main.0169c940.js",
-    "static/media/About-video.mp4": "/maher-moto/static/media/About-video.e7ebfe21f8e6c853680a.mp4",
-    "static/media/im5.jpeg": "/maher-moto/static/media/im5.0661c0ee2cdbc6c86e0d.jpeg",
-    "static/media/im1.jpeg": "/maher-moto/static/media/im1.b2542862296ba1d617ea.jpeg",
-    "static/media/im2.jpeg": "/maher-moto/static/media/im2.4a603bd42ea625ad4007.jpeg",
-    "static/media/backGround.jpg": "/maher-moto/static/media/backGround.9079e00e482cba889aa5.jpg",
-    "static/media/im7.jpeg": "/maher-moto/static/media/im7.9096d77f8f64b04f1982.jpeg",
-    "static/media/im9.jpeg": "/maher-moto/static/media/im9.f7eec8de9486db59ca4b.jpeg",
-    "static/media/im8.jpeg": "/maher-moto/static/media/im8.be993e10c032761abc40.jpeg",
-    "static/media/product1.jpeg": "/maher-moto/static/media/product1.3821b3abe6d0f3d5d2fa.jpeg",
-    "static/media/image.png": "/maher-moto/static/media/image.910011c315e03963ac84.png",
-    "index.html": "/maher-moto/index.html",
-    "main.d8287be4.css.map": "/maher-moto/static/css/main.d8287be4.css.map",
-    "main.0169c940.js.map": "/maher-moto/static/js/main.0169c940.js.map"
+    "main.css": "/moto-maher/static/css/main.d8287be4.css",
+    "main.js": "/moto-maher/static/js/main.c394d764.js",
+    "static/media/About-video.mp4": "/moto-maher/static/media/About-video.e7ebfe21f8e6c853680a.mp4",
+    "static/media/im5.jpeg": "/moto-maher/static/media/im5.0661c0ee2cdbc6c86e0d.jpeg",
+    "static/media/im1.jpeg": "/moto-maher/static/media/im1.b2542862296ba1d617ea.jpeg",
+    "static/media/im2.jpeg": "/moto-maher/static/media/im2.4a603bd42ea625ad4007.jpeg",
+    "static/media/backGround.jpg": "/moto-maher/static/media/backGround.9079e00e482cba889aa5.jpg",
+    "static/media/im7.jpeg": "/moto-maher/static/media/im7.9096d77f8f64b04f1982.jpeg",
+    "static/media/im9.jpeg": "/moto-maher/static/media/im9.f7eec8de9486db59ca4b.jpeg",
+    "static/media/im8.jpeg": "/moto-maher/static/media/im8.be993e10c032761abc40.jpeg",
+    "static/media/product1.jpeg": "/moto-maher/static/media/product1.3821b3abe6d0f3d5d2fa.jpeg",
+    "static/media/image.png": "/moto-maher/static/media/image.910011c315e03963ac84.png",
+    "index.html": "/moto-maher/index.html",
+    "main.d8287be4.css.map": "/moto-maher/static/css/main.d8287be4.css.map",
+    "main.c394d764.js.map": "/moto-maher/static/js/main.c394d764.js.map"
   },
   "entrypoints": [
     "static/css/main.d8287be4.css",
-    "static/js/main.0169c940.js"
+    "static/js/main.c394d764.js"
   ]
 }
