@@ -2,7 +2,7 @@ import React from 'react';
 import Footer from './components/Footer';
 import Home from './components/Home';
 import Navbar from './components/Navbar';
-import Newsletter from './components/Newsletter';
+// import Newsletter from './components/Newsletter';
 import Contact from './components/Contact/Contact';
 import AboutUs from './components/AboutUs/AboutUs';
 import Products from './components/Products';
@@ -15,7 +15,7 @@ function App() {
       <Home />
       <AboutUs/>
       <Products/>
-      <Newsletter />
+      {/* <Newsletter /> */}
       <Contact/>
       <ChatBot/>
       <Footer />
