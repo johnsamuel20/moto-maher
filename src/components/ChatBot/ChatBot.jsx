@@ -5,7 +5,7 @@ import './ChatBot.css'
 const ChatBot = () => {
   return (
     <div>
-      <ReactWhatsapp number="+20 1288468560" message="I am interested">
+      <ReactWhatsapp number="+20 1288468560" message="I need help">
       <a
         href=""
         className="float bounce"

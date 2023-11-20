@@ -10,6 +10,7 @@ import Ma7al2 from "../../assets/im2.jpeg";
 // import Ma7al3 from "../../assets/im3.jpeg";
 // import Ma7al4 from "../../assets/im4.jpeg";
 import Ma7al5 from "../../assets/im5.jpeg";
+import Analytics from "./AboutCont";
 // import Ma7al6 from "../../assets/im6.jpeg";
 
 const AboutUs = () => {
@@ -64,7 +65,7 @@ const AboutUs = () => {
   return (
     <div
       id="app"
-      className="bg-zinc-200 max-w-screen-lg mx-auto px-4 md:px-8 py-12 transition-all duration-500 ease-linear min-w-full "
+      className="bg-white max-w-screen-lg mx-auto px-4 md:px-8 py-12 transition-all duration-500 ease-linear min-w-full "
     >
       <div className="text-center p-10">
         <h1 className="font-bold text-4xl mb-4 text-black">About Us</h1>
@@ -160,17 +161,8 @@ const AboutUs = () => {
           </button>
         </div>
       </div>
-      <div className="mt-10 md:text-4xl sm:text-3xl ">
-        <p style ={{fontFamily: "'Roboto Slab', serif"}}>
-          A success story and a continuing journey <br /> <br />
-          In line with the strategic planning of the new republic in the use of
-          clean energy <br /> <br />
-          Al Maher Group of Companies is moving in the same rational direction
-          as the state by working to provide light personal transportation that
-          runs on gas and electricity <br /> <br />
-          We dream of a 100% Egyptian product in Egypt and the rest of the
-          African continent
-        </p>
+      <div>
+        <Analytics/>
       </div>
       <div className="mt-10 flex justify-center items-center ">
         <video className="rounded-xl" src={AboutVideo} controls loop></video>
