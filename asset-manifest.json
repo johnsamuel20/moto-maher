@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/moto-maher/static/css/main.c3c9dd59.css",
-    "main.js": "/moto-maher/static/js/main.5a772e08.js",
+    "main.js": "/moto-maher/static/js/main.9aa81210.js",
     "static/media/About-video.mp4": "/moto-maher/static/media/About-video.e7ebfe21f8e6c853680a.mp4",
     "static/media/im5.jpeg": "/moto-maher/static/media/im5.0661c0ee2cdbc6c86e0d.jpeg",
     "static/media/im1.jpeg": "/moto-maher/static/media/im1.b2542862296ba1d617ea.jpeg",
@@ -15,10 +15,10 @@
     "static/media/image.png": "/moto-maher/static/media/image.910011c315e03963ac84.png",
     "index.html": "/moto-maher/index.html",
     "main.c3c9dd59.css.map": "/moto-maher/static/css/main.c3c9dd59.css.map",
-    "main.5a772e08.js.map": "/moto-maher/static/js/main.5a772e08.js.map"
+    "main.9aa81210.js.map": "/moto-maher/static/js/main.9aa81210.js.map"
   },
   "entrypoints": [
     "static/css/main.c3c9dd59.css",
-    "static/js/main.5a772e08.js"
+    "static/js/main.9aa81210.js"
   ]
 }
