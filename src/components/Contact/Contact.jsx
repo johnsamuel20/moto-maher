@@ -75,7 +75,6 @@ const Contact = () => {
                   <div className="text-right mt-4 md:mt-12">
                     <button className="border-2 border-[#00df9a] rounded px-6 py-2 text-[#00df9a] hover:bg-[#00df9a] hover:text-black transition-colors duration-300">
                       Send a Message
-                      <i className="fas fa-chevron-right ml-2 text-sm" />
                     </button>
                   </div>
                 </form>
