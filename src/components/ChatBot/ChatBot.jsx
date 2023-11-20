@@ -8,7 +8,7 @@ const ChatBot = () => {
       <ReactWhatsapp number="+20 1288468560" message="I am interested">
       <a
         href=""
-        className="float"
+        className="float bounce"
         target="_blank"
         style={{zIndex : "1000"}}
       >
