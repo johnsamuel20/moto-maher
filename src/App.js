@@ -8,6 +8,7 @@ import Navbar from './components/Navbar';
 import Contact from './components/Contact/Contact';
 import AboutUs from './components/AboutUs/AboutUs';
 import Products from './components/Products';
+import ChatBot from './components/ChatBot/ChatBot';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       {/* <Newsletter /> */}
       {/* <Cards /> */}
       <Contact/>
+      <ChatBot/>
       <Footer />
     </div>
   );
