@@ -15,6 +15,7 @@ function App() {
       <Home />
       <AboutUs/>
       <Products/>
+      
       {/* <Newsletter /> */}
       <Contact/>
       <ChatBot/>
