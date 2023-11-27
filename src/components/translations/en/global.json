@@ -1,0 +1,16 @@
+{
+    "home" : {
+        "companyName": "ElMaher Trade Company",
+        "unleashYourSpirit": "Unleash Your Spirit on Two Wheels.",
+        "weAre": "We are",
+        "qualities": ["Fast", "Flexible", "Efficient"],
+        "getStarted": "Get Started"
+    },
+    "about" : {
+        "title" : "ABOUT ELMAHER TRADE COMPANY",
+        "subtitle" : "A Success Story and a Continuing Journey",
+        "line1" : "In line with the strategic planning of the new republic in the use of clean energy." ,
+        "line2" : "Al Maher Group of Companies is moving in the same rational direction as the state by working to provide light personal transportation that runs on gas and electricity",
+        "line3" : "We dream of a 100% Egyptian product in Egypt and the rest of the African continent"
+    }
+}

@@ -53,7 +53,7 @@ const productData = [
   // Add more products as needed
 ];
 
-const Products = () => {
+const Products = ({darkMode}) => {
   const [popupVisible, setPopupVisible] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState(null);
 
@@ -151,14 +151,17 @@ const Products = () => {
 
   return (
     <>
+      <div className={`${!darkMode ? 'bg-white' : ''}`}>
       <div className="text-center p-10">
-        <h1 className="font-bold text-4xl mb-4 text-white">Our Products</h1>
+        <h1 className={`font-bold text-4xl mb-4 ${darkMode ? 'text-white' : ''}`}>Our Products</h1>
       </div>
-      <section className="w-fit mx-auto grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 justify-items-center justify-center gap-y-20 gap-x-14 mt-10 mb-5">
+      <section className=" w-fit mx-auto grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 justify-items-center justify-center gap-y-20 gap-x-14 mt-10 mb-5">
         {productData.map((card, index) => (
           <ProductCard key={index} data={card} />
         ))}
       </section>
+      </div>
+
       <Popup />
     </>
   );

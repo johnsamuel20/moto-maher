@@ -10,10 +10,10 @@ import Ma7al2 from "../../assets/im2.jpeg";
 // import Ma7al3 from "../../assets/im3.jpeg";
 // import Ma7al4 from "../../assets/im4.jpeg";
 import Ma7al5 from "../../assets/im5.jpeg";
-import Analytics from "./AboutCont";
+import AboutUsCont from "./AboutCont";
 // import Ma7al6 from "../../assets/im6.jpeg";
 
-const AboutUs = () => {
+const AboutUs = ({t,darkMode}) => {
   const slidesContainerRef = useRef(null);
 
   useEffect(() => {
@@ -65,10 +65,11 @@ const AboutUs = () => {
   return (
     <div
       id="app"
-      className="bg-white max-w-screen-lg mx-auto px-4 md:px-8 py-12 transition-all duration-500 ease-linear min-w-full "
+      className=" max-w-screen-lg mx-auto px-4 md:px-8 py-12 transition-all duration-500 ease-linear min-w-full "
+      style={!darkMode ? { backgroundColor: "white" } : {}}
     >
       <div className="text-center p-10">
-        <h1 className="font-bold text-4xl mb-4 text-black">About Us</h1>
+        <h1 className={`font-bold text-4xl mb-4 ${darkMode ? 'text-white' : ''} `}>About Us</h1>
       </div>
       <div className="relative">
         <div
@@ -162,7 +163,7 @@ const AboutUs = () => {
         </div>
       </div>
       <div>
-        <Analytics/>
+        <AboutUsCont t={t} darkMode={darkMode}/>
       </div>
       <div className="mt-10 flex justify-center items-center ">
         <video className="rounded-xl" src={AboutVideo} controls loop></video>

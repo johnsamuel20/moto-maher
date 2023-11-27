@@ -5,7 +5,7 @@ import "./Contact.css";
 const Contact = () => {
   return (
     <div className="contact-1 py-4 md:py-12">
-      <div className="container mx-auto px-4">
+      <div className=" mx-auto px-4">
         <div className="xl:flex -mx-4">
           <div className="xl:w-10/12 xl:mx-auto px-4">
             <div className="xl:w-3/4 mb-4">
