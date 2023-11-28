@@ -88,7 +88,7 @@ const Products = ({darkMode}) => {
               <div className="ml-auto">
                 <button
                   onClick={openPopup}
-                  className="rounded-lg px-4 py-2 font-medium bg-[#00df9a] hover:bg-green-300 duration-300"
+                  className={`${darkMode ? "bg-[#00df9a] hover:bg-green-300" : "bg-[#056fd9] hover:bg-blue-500 text-white"} rounded-lg px-4 py-2 font-medium  duration-300`}
                 >
                   Read More
                 </button>
@@ -99,7 +99,7 @@ const Products = ({darkMode}) => {
     );
   };
 
-  const Popup = () => {
+  const Popup = ({darkMode}) => {
     const [closing, setClosing] = useState(false);
   
     const handleClose = () => {
@@ -135,7 +135,7 @@ const Products = ({darkMode}) => {
             </p>
             <div className="ml-auto float-right">
               <button
-                className="rounded-lg px-4 py-2 font-medium bg-[#00df9a] hover:bg-green-300 duration-300"
+                className={`${darkMode ? "bg-[#00df9a] hover:bg-green-300" : "bg-[#056fd9] hover:bg-blue-500 text-white"} rounded-lg px-4 py-2 font-medium   duration-300`}
                 onClick={handleClose}
               >
                 Go back
@@ -150,20 +150,20 @@ const Products = ({darkMode}) => {
   
 
   return (
-    <>
-      <div className={`${!darkMode ? 'bg-white' : ''}`}>
+    <div className={`${!darkMode ? 'bg-white' : ''} transition-all duration-500 ease-linear`}>
+      <div >
       <div className="text-center p-10">
         <h1 className={`font-bold text-4xl mb-4 ${darkMode ? 'text-white' : ''}`}>Our Products</h1>
       </div>
-      <section className=" w-fit mx-auto grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 justify-items-center justify-center gap-y-20 gap-x-14 mt-10 mb-5">
+      <section className=" w-fit mx-auto grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 justify-items-center justify-center gap-y-20 gap-x-14 mt-10 ">
         {productData.map((card, index) => (
           <ProductCard key={index} data={card} />
         ))}
       </section>
       </div>
 
-      <Popup />
-    </>
+      <Popup darkMode={darkMode}/>
+    </div>
   );
 };
 

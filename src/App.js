@@ -16,7 +16,7 @@ function App() {
     const newLang = i18n.language === 'en' ? 'ar' : 'en';
     i18n.changeLanguage(newLang);
   };
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
   const toggleDark = () => {
     setDarkMode(!darkMode);
   };

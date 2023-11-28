@@ -2,20 +2,20 @@ import React from "react";
 import Map from "../Map";
 import "./Contact.css";
 
-const Contact = () => {
+const Contact = ({darkMode}) => {
   return (
-    <div className="contact-1 py-4 md:py-12">
+    <div className={`contact-1 py-4 md:py-12 ${!darkMode ? 'bg-white' : ''} transition-all duration-500 ease-linear`}>
       <div className=" mx-auto px-4">
         <div className="xl:flex -mx-4">
           <div className="xl:w-10/12 xl:mx-auto px-4">
             <div className="xl:w-3/4 mb-4">
-              <h1 className="text-3xl text-medium mb-4 text-white">
+              <h1 className={`text-3xl text-medium mb-4 ${darkMode ? 'text-white' : ''}`}>
                 We would love to hear from you
               </h1>
-              <p className="text-xl mb-2 text-white">
+              <p className={`text-xl mb-2  ${darkMode ? 'text-white' : ''}`}>
                 Please submit your information and we will get back to you.
               </p>
-              <p className="text-xl mb-2 text-white">
+              <p className={`text-xl mb-2  ${darkMode ? 'text-white' : ''}`}>
                 Call us at{" "}
                 <a
                   href="tel:+12314561231"

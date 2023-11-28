@@ -13,7 +13,7 @@ const AboutCont = ({ t , darkMode }) => {
       <div className="max-w-[1240px] mx-auto grid md:grid-cols-2">
         <img className={`w-[550px] mx-auto my-4 ${imageOrderClass}`} src={success} alt="/" />
         <div className="flex flex-col justify-center">
-          <p className="text-[#00df9a] font-bold">{t("about.title")}</p>
+          <p className={`${darkMode ? "text-[#00df9a]" : "text-[#056fd9]"} font-bold`}>{t("about.title")}</p>
           <h1 className={`${darkMode ? 'text-white' : ''} md:text-4xl sm:text-3xl text-2xl font-bold py-2`}>
             {t("about.subtitle")}
           </h1>

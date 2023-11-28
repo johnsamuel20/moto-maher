@@ -3,7 +3,7 @@ import Typed from "react-typed";
 import backGroundImage from "../assets/backGround.jpg";
 import { useTranslation } from "react-i18next";
 
-const Home = ({ t }) => {
+const Home = ({ t ,darkMode }) => {
   const { i18n } = useTranslation();
   const styles = {
     width: "100%",
@@ -17,7 +17,7 @@ const Home = ({ t }) => {
   return (
     <div className="text-white " style={styles}>
       <div className="max-w-[800px] mt-[-96px] w-full h-screen mx-auto text-center flex flex-col justify-center">
-        <p className="text-[#00df9a] font-bold p-2 text-2xl mt-12">
+        <p className={`${darkMode ? "text-[#00df9a]" : "text-[#056fd9]"} font-bold p-2 text-2xl mt-12 transition-all duration-500`}>
           {t("home.companyName")}
         </p>
         <h1 className="md:text-7xl sm:text-6xl text-4xl font-bold md:py-6">
@@ -38,7 +38,7 @@ const Home = ({ t }) => {
         </div>
 
         <a href="#products">
-          <button className="bg-[#00df9a] w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-black">
+          <button className={`${darkMode ? "bg-[#00df9a]" : "bg-[#056fd9]"} w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-black transition-all duration-500`}>
           {t("home.getStarted")}
           </button>
         </a>
