@@ -37,8 +37,8 @@ const Home = ({ t ,darkMode }) => {
           />
         </div>
 
-        <a href="#products">
-          <button className={`${darkMode ? "bg-[#00df9a]" : "bg-[#056fd9]"} w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-black transition-all duration-500`}>
+        <a href="#">
+          <button className={`${darkMode ? "bg-[#00df9a] text-black" : "bg-[#056fd9] text-white"} w-[200px] rounded-md font-medium my-6 mx-auto py-3  transition-all duration-500`}>
           {t("home.getStarted")}
           </button>
         </a>
