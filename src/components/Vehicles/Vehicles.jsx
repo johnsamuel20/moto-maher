@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Toktok from "../../assets/toktok.jpg";
 import Bike from "../../assets/bike.jpg";
 import ElectricBike from "../../assets/electric bike.jpg";
@@ -29,7 +30,7 @@ const Vehicles = ({ darkMode, t }) => {
               <figcaption>
                 <h3>{t("vehicles.title")}</h3>
               </figcaption>
-              <a href="two-wheel" />
+              <Link to="/two-wheel" />
             </figure>
           </div>
           <div>
@@ -39,7 +40,7 @@ const Vehicles = ({ darkMode, t }) => {
               <figcaption>
                 <h3>{t("vehicles.title")}</h3>
               </figcaption>
-              <a href="three-wheel" />
+              <Link to="/three-wheel" />
             </figure>
           </div>
           <div>
@@ -49,7 +50,7 @@ const Vehicles = ({ darkMode, t }) => {
               <figcaption>
                 <h3>{t("vehicles.title")}</h3>
               </figcaption>
-              <a href="electric-bike" />
+              <Link to="/electric-bike" />
             </figure>
           </div>
         </div>
