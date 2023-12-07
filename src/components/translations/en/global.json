@@ -15,5 +15,23 @@
     },
     "vehicles" : {
         "title" : "Show Products"
+    },
+    "nav" : {
+        "home" : "Home" ,
+        "about" : "About Us",
+        "products" : "Products" ,
+        "contact" : "Contact Us"
+    },
+    "footer" : {
+        "title" : "We would love to hear from you",
+        "please" : "Please submit your information and we will get back to you.",
+        "call" : "Call us at" ,
+        "number" : "+1 231 456 1231",
+        "fullName" : "Full Name",
+        "company" : "Company Name" ,
+        "email" : "E-mail address" ,
+        "phone" : "Phone Number" ,
+        "message" : "Your message here",
+        "send" : "Send message"
     }
 }

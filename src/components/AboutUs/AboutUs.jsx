@@ -64,7 +64,7 @@ const AboutUs = ({t,darkMode}) => {
   }, [slidesContainerRef]);
   return (
     <div
-      id="app"
+      id="about"
       className=" max-w-screen-lg mx-auto px-4 md:px-8 py-12 transition-all duration-500 ease-linear min-w-full "
       style={!darkMode ? { backgroundColor: "white" } : {}}
     >

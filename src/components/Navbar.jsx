@@ -3,7 +3,7 @@ import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import greenLogo from "../assets/image.png";
 import blueLogo from "../assets/blueLogo.png";
 import DarkToggle from "./DarkToggle/DarkToggle";
-
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 const Navbar = ({ t, i18n, handleChangeLanguage, darkMode, toggleDark }) => {
   const [nav, setNav] = useState(false);
   const [scrolling, setScrolling] = useState(false);
@@ -47,8 +47,31 @@ const Navbar = ({ t, i18n, handleChangeLanguage, darkMode, toggleDark }) => {
           {/* <h1 className='text-[#00df9a] font-bold text-xs'>El Maher Trade Company</h1> */}
         </div>
         <ul className="hidden md:flex cursor-pointer">
-          <li
+          <ScrollLink
+            to="home"
+            spy={true}
+            smooth={true}
+            duration={500}
+            className={`p-4  duration-300 ${
+              darkMode ? "hover:text-[#00df9a]" : "hover:text-[#056fd9]"
+            } ${
+              scrolling
+                ? !darkMode
+                  ? "text-black transition-all duration-500 "
+                  : "text-stone-200 transition-all duration-500 "
+                : ""
+            }`}
+          >
+            {t("nav.home")}
+          </ScrollLink>
+          <ScrollLink
+            to="about"
+            spy={true}
+            smooth={true}
+            duration={500}
             className={`p-4 hover:text-[#00df9a] duration-300 ${
+              darkMode ? "hover:text-[#00df9a]" : "hover:text-[#056fd9]"
+            } ${
               scrolling
                 ? !darkMode
                   ? "text-black transition-all duration-500"
@@ -56,10 +79,16 @@ const Navbar = ({ t, i18n, handleChangeLanguage, darkMode, toggleDark }) => {
                 : ""
             }`}
           >
-            Home
-          </li>
-          <li
+            {t("nav.about")}
+          </ScrollLink>
+          <ScrollLink
+            to="products"
+            spy={true}
+            smooth={true}
+            duration={500}
             className={`p-4 hover:text-[#00df9a] duration-300 ${
+              darkMode ? "hover:text-[#00df9a]" : "hover:text-[#056fd9]"
+            } ${
               scrolling
                 ? !darkMode
                   ? "text-black transition-all duration-500"
@@ -67,10 +96,16 @@ const Navbar = ({ t, i18n, handleChangeLanguage, darkMode, toggleDark }) => {
                 : ""
             }`}
           >
-            Company
-          </li>
-          <li
+            {t("nav.products")}
+          </ScrollLink>
+          <ScrollLink
+            to="contact"
+            spy={true}
+            smooth={true}
+            duration={500}
             className={`p-4 hover:text-[#00df9a] duration-300 ${
+              darkMode ? "hover:text-[#00df9a]" : "hover:text-[#056fd9]"
+            } ${
               scrolling
                 ? !darkMode
                   ? "text-black transition-all duration-500"
@@ -78,30 +113,8 @@ const Navbar = ({ t, i18n, handleChangeLanguage, darkMode, toggleDark }) => {
                 : ""
             }`}
           >
-            Resources
-          </li>
-          <li
-            className={`p-4 hover:text-[#00df9a] duration-300 ${
-              scrolling
-                ? !darkMode
-                  ? "text-black transition-all duration-500"
-                  : "text-stone-200 transition-all duration-500"
-                : ""
-            }`}
-          >
-            About
-          </li>
-          <li
-            className={`p-4 hover:text-[#00df9a] duration-300 ${
-              scrolling
-                ? !darkMode
-                  ? "text-black transition-all duration-500"
-                  : "text-stone-200 transition-all duration-500"
-                : ""
-            }`}
-          >
-            Contact
-          </li>
+            {t("nav.contact")}
+          </ScrollLink>
           <button
             className={`${
               darkMode
@@ -177,49 +190,80 @@ const Navbar = ({ t, i18n, handleChangeLanguage, darkMode, toggleDark }) => {
           </div>
 
           <li
-            className={`p-4 border-b border-gray-600 hover:text-[#00df9a] duration-300 ${
+            className={`p-4 border-b border-gray-600 ${
+              darkMode ? "hover:text-[#00df9a]" : "hover:text-[#056fd9]"
+            } duration-300 ${
               !darkMode
                 ? "text-black transition-all duration-500"
                 : "text-stone-200 transition-all duration-500"
             }`}
           >
-            Home
+            <ScrollLink
+              to="home"
+              spy={true}
+              smooth={true}
+              duration={500}
+              onClick={handleNav}
+            >
+              {t("nav.home")}
+            </ScrollLink>
           </li>
           <li
-            className={`p-4 border-b border-gray-600 hover:text-[#00df9a] duration-300 ${
+            className={`p-4 border-b border-gray-600 ${
+              darkMode ? "hover:text-[#00df9a]" : "hover:text-[#056fd9]"
+            } duration-300 ${
               !darkMode
                 ? "text-black transition-all duration-500"
                 : "text-stone-200 transition-all duration-500"
             }`}
           >
-            Company
+            <ScrollLink
+              to="about"
+              spy={true}
+              smooth={true}
+              duration={500}
+              onClick={handleNav}
+            >
+              {t("nav.about")}
+            </ScrollLink>
           </li>
           <li
-            className={`p-4 border-b border-gray-600 hover:text-[#00df9a] duration-300 ${
+            className={`p-4 border-b border-gray-600 ${
+              darkMode ? "hover:text-[#00df9a]" : "hover:text-[#056fd9]"
+            } duration-300 ${
               !darkMode
                 ? "text-black transition-all duration-500"
                 : "text-stone-200 transition-all duration-500"
             }`}
           >
-            Resources
+            <ScrollLink
+              to="products"
+              spy={true}
+              smooth={true}
+              duration={500}
+              onClick={handleNav}
+            >
+              {t("nav.products")}
+            </ScrollLink>
           </li>
           <li
-            className={`p-4 border-b border-gray-600 hover:text-[#00df9a] duration-300 ${
+            className={`p-4 border-b border-gray-600 ${
+              darkMode ? "hover:text-[#00df9a]" : "hover:text-[#056fd9]"
+            } duration-300 ${
               !darkMode
                 ? "text-black transition-all duration-500"
                 : "text-stone-200 transition-all duration-500"
             }`}
           >
-            About
-          </li>
-          <li
-            className={`p-4 border-b border-gray-600 hover:text-[#00df9a] duration-300 ${
-              !darkMode
-                ? "text-black transition-all duration-500"
-                : "text-stone-200 transition-all duration-500"
-            }`}
-          >
-            Contact
+            <ScrollLink
+              to="contact"
+              spy={true}
+              smooth={true}
+              duration={500}
+              onClick={handleNav}
+            >
+              {t("nav.contact")}
+            </ScrollLink>
           </li>
           <button
             className={`${

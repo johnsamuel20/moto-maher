@@ -6,12 +6,14 @@ import {
   FaInstagram,
   FaTwitterSquare,
 } from 'react-icons/fa';
+import ChatBot from '../components/ChatBot/ChatBot'
 
-const Footer = () => {
+const Footer = ({darkMode , t}) => {
   return (
-    <div className='max-w-[1240px] mx-auto py-16 px-4 grid lg:grid-cols-3 gap-8 text-gray-300'>
+    <div className={`${darkMode ? "bg-black" : "bg-white"} transition-all duration-500 ease-linear`}>
+      <div className={`${darkMode ? "text-gray-300" : ""} max-w-[1240px] mx-auto py-16 px-4 grid lg:grid-cols-3 gap-8 `}>
       <div>
-        <h1 className='w-full text-3xl font-bold text-[#00df9a]'>ElMaher Trade Company</h1>
+        <h1 className={`w-full text-3xl font-bold ${darkMode ? "text-[#00df9a]" : "text-[#056fd9]"} `}>{t("home.companyName")}</h1>
         <p className='py-4'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id odit ullam iste repellat consequatur libero reiciendis, blanditiis accusantium.</p>
         <div className='flex justify-between md:w-[75%] my-6'>
             <FaFacebookSquare size={30} />
@@ -60,6 +62,9 @@ const Footer = () => {
     </div>
       </div>
     </div>
+    <ChatBot/>
+    </div>
+    
   );
 };
 

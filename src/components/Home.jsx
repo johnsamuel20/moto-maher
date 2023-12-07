@@ -17,7 +17,7 @@ const Home = ({ t ,darkMode }) => {
   return (
     <div className="text-white " style={styles}>
       <div className="max-w-[800px] mt-[-96px] w-full h-screen mx-auto text-center flex flex-col justify-center">
-        <p className={`${darkMode ? "text-[#00df9a]" : "text-[#056fd9]"} font-bold p-2 text-2xl mt-12 transition-all duration-500`}>
+        <p className={`${darkMode ? "text-[#00df9a]" : "text-[#056fd9]"} font-bold p-2 text-2xl mt-12 transition-all duration-500`} >
           {t("home.companyName")}
         </p>
         <h1 className="md:text-7xl sm:text-6xl text-4xl font-bold md:py-6">

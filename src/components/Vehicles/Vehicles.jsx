@@ -12,6 +12,7 @@ const Vehicles = ({ darkMode, t }) => {
   return (
     <>
       <section
+      id="products"
         className={`section-1 ${
           !darkMode ? "bg-white" : ""
         } transition-all duration-500 ease-linear`}
