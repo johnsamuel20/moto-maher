@@ -28,22 +28,18 @@ function App() {
       />
       <Routes>
         <Route
-          exact
           path="/moto-maher"
           element={<HomePage darkMode={darkMode} t={t} />}
         />
         <Route
-          exact
           path="/moto-maher/two-wheel"
           element={<TwoWheelPage darkMode={darkMode} t={t} />}
         />
         <Route
-          exact
           path="/moto-maher/three-wheel"
           element={<TwoWheelPage darkMode={darkMode} t={t} />}
         />
         <Route
-          exact
           path="/moto-maher/electric-bike"
           element={<TwoWheelPage darkMode={darkMode} t={t} />}
         />

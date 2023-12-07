@@ -30,7 +30,7 @@ const Vehicles = ({ darkMode, t }) => {
               <figcaption>
                 <h3>{t("vehicles.title")}</h3>
               </figcaption>
-              <Link to="/two-wheel" />
+              <Link to="/moto-maher/two-wheel" />
             </figure>
           </div>
           <div>
@@ -40,7 +40,7 @@ const Vehicles = ({ darkMode, t }) => {
               <figcaption>
                 <h3>{t("vehicles.title")}</h3>
               </figcaption>
-              <Link to="/three-wheel" />
+              <Link to="/moto-maher/three-wheel" />
             </figure>
           </div>
           <div>
@@ -50,7 +50,7 @@ const Vehicles = ({ darkMode, t }) => {
               <figcaption>
                 <h3>{t("vehicles.title")}</h3>
               </figcaption>
-              <Link to="/electric-bike" />
+              <Link to="/moto-maher/electric-bike" />
             </figure>
           </div>
         </div>
