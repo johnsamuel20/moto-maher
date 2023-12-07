@@ -6,6 +6,9 @@ import ElectricBike from "../../assets/electric bike.jpg";
 import "./Vehicles.css";
 
 const Vehicles = ({ darkMode, t }) => {
+  const handleClick = ()=> {
+    window.scrollTo(0, 0);
+  }
   return (
     <>
       <section
@@ -30,7 +33,7 @@ const Vehicles = ({ darkMode, t }) => {
               <figcaption>
                 <h3>{t("vehicles.title")}</h3>
               </figcaption>
-              <Link to="/moto-maher/two-wheel" />
+              <Link to="/moto-maher/two-wheel" onClick={handleClick}/>
             </figure>
           </div>
           <div>
@@ -40,7 +43,7 @@ const Vehicles = ({ darkMode, t }) => {
               <figcaption>
                 <h3>{t("vehicles.title")}</h3>
               </figcaption>
-              <Link to="/moto-maher/three-wheel" />
+              <Link to="/moto-maher/three-wheel" onClick={handleClick}/>
             </figure>
           </div>
           <div>
@@ -50,7 +53,7 @@ const Vehicles = ({ darkMode, t }) => {
               <figcaption>
                 <h3>{t("vehicles.title")}</h3>
               </figcaption>
-              <Link to="/moto-maher/electric-bike" />
+              <Link to="/moto-maher/electric-bike" onClick={handleClick} />
             </figure>
           </div>
         </div>
