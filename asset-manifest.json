@@ -1,9 +1,34 @@
 {
   "files": {
-    "main.css": "/moto-maher/static/css/main.ad2ea9f1.css",
-    "main.js": "/moto-maher/static/js/main.1f646d5d.js",
+    "main.css": "/moto-maher/static/css/main.88f39336.css",
+    "main.js": "/moto-maher/static/js/main.2ae8a3ac.js",
     "static/media/About-video.mp4": "/moto-maher/static/media/About-video.e7ebfe21f8e6c853680a.mp4",
+    "static/media/toktok.jpg": "/moto-maher/static/media/toktok.2cdde1cd0b25d815fdb2.jpg",
+    "static/media/TNT-150.png": "/moto-maher/static/media/TNT-150.1fb1d569c839ef18a7a1.png",
+    "static/media/Zontes-U1-155.png": "/moto-maher/static/media/Zontes-U1-155.4856a3662754a40c8f13.png",
+    "static/media/Benelli VLR 200 super sport.png": "/moto-maher/static/media/Benelli VLR 200 super sport.9304606bcf1ffa32ccdd.png",
+    "static/media/Dayun 4 pro max.png": "/moto-maher/static/media/Dayun 4 pro max.3dd35710ebbb2caef9fb.png",
+    "static/media/Benelli-VLX-200.png": "/moto-maher/static/media/Benelli-VLX-200.3ab10054b9a3c3256fb8.png",
+    "static/media/Hogan F250.png": "/moto-maher/static/media/Hogan F250.8b1fc945919e9d9b22d3.png",
+    "static/media/hogan v250.png": "/moto-maher/static/media/hogan v250.44f87aee32c0f1c11b8c.png",
+    "static/media/Bajaj-Boxer-Classic1.png": "/moto-maher/static/media/Bajaj-Boxer-Classic1.8d00a3087e26f4c776b7.png",
+    "static/media/Marino-classic-150.png": "/moto-maher/static/media/Marino-classic-150.da385b3cd46263399254.png",
+    "static/media/electric bike.jpg": "/moto-maher/static/media/electric bike.41f7a5404e4ee42290a6.jpg",
+    "static/media/benelli VLR-150.png": "/moto-maher/static/media/benelli VLR-150.a13ffdc8809c2e775c4d.png",
+    "static/media/Hogan 4 HJ.jpg": "/moto-maher/static/media/Hogan 4 HJ.52ade6eeaebb6d640e52.jpg",
+    "static/media/wing 200.png": "/moto-maher/static/media/wing 200.94e7706a70e1bd2c6f61.png",
+    "static/media/Hogan l250.jpg": "/moto-maher/static/media/Hogan l250.aa24ce991515c770f65a.jpg",
+    "static/media/SYM SR 200cc.png": "/moto-maher/static/media/SYM SR 200cc.854f809466713871cc35.png",
+    "static/media/Hawa R8.png": "/moto-maher/static/media/Hawa R8.865e04cd05f9292ce811.png",
+    "static/media/Hogan 3-1.jpg": "/moto-maher/static/media/Hogan 3-1.045a6c6aa5ed177e171b.jpg",
+    "static/media/Hogan 3.jpg": "/moto-maher/static/media/Hogan 3.045a6c6aa5ed177e171b.jpg",
+    "static/media/zontes G1 155.png": "/moto-maher/static/media/zontes G1 155.4b65a927abde91da67c4.png",
+    "static/media/Zontes-M-310-CC.jpg": "/moto-maher/static/media/Zontes-M-310-CC.e13743fe4720a852ec62.jpg",
+    "static/media/Vigory VLR 150.png": "/moto-maher/static/media/Vigory VLR 150.292dcba76a1158ecabeb.png",
+    "static/media/Hogan 4.jpg": "/moto-maher/static/media/Hogan 4.5fb7c428f459105a2221.jpg",
+    "static/media/bike.jpg": "/moto-maher/static/media/bike.d8abb474ecc29db5cdd5.jpg",
     "static/media/im5.jpeg": "/moto-maher/static/media/im5.0661c0ee2cdbc6c86e0d.jpeg",
+    "static/media/Dayun 2.png": "/moto-maher/static/media/Dayun 2.1435c79f7663c1db475b.png",
     "static/media/im1.jpeg": "/moto-maher/static/media/im1.b2542862296ba1d617ea.jpeg",
     "static/media/im2.jpeg": "/moto-maher/static/media/im2.4a603bd42ea625ad4007.jpeg",
     "static/media/backGround.jpg": "/moto-maher/static/media/backGround.9079e00e482cba889aa5.jpg",
@@ -12,14 +37,14 @@
     "static/media/success.jpg": "/moto-maher/static/media/success.5d87a47d0433bc22b743.jpg",
     "static/media/im8.jpeg": "/moto-maher/static/media/im8.be993e10c032761abc40.jpeg",
     "static/media/blueLogo.png": "/moto-maher/static/media/blueLogo.f59a139e8cf6ce42e114.png",
-    "static/media/product1.jpeg": "/moto-maher/static/media/product1.3821b3abe6d0f3d5d2fa.jpeg",
+    "static/media/Benelli VLM 200.png": "/moto-maher/static/media/Benelli VLM 200.6d5025f941299e6962d6.png",
     "static/media/image.png": "/moto-maher/static/media/image.910011c315e03963ac84.png",
     "index.html": "/moto-maher/index.html",
-    "main.ad2ea9f1.css.map": "/moto-maher/static/css/main.ad2ea9f1.css.map",
-    "main.1f646d5d.js.map": "/moto-maher/static/js/main.1f646d5d.js.map"
+    "main.88f39336.css.map": "/moto-maher/static/css/main.88f39336.css.map",
+    "main.2ae8a3ac.js.map": "/moto-maher/static/js/main.2ae8a3ac.js.map"
   },
   "entrypoints": [
-    "static/css/main.ad2ea9f1.css",
-    "static/js/main.1f646d5d.js"
+    "static/css/main.88f39336.css",
+    "static/js/main.2ae8a3ac.js"
   ]
 }
