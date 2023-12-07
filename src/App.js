@@ -1,19 +1,15 @@
-import React from 'react';
-import { useState } from 'react';
-import Footer from './components/Footer';
-import Home from './components/Home';
-import Navbar from './components/Navbar';
-// import Newsletter from './components/Newsletter';
-import Contact from './components/Contact/Contact';
-import AboutUs from './components/AboutUs/AboutUs';
-import Products from './components/Products';
-import ChatBot from './components/ChatBot/ChatBot';
-import { useTranslation } from 'react-i18next';
+import React from "react";
+import { useState } from "react";
+import Navbar from "./components/Navbar";
+import HomePage from "./pages/HomePage";
+import { useTranslation } from "react-i18next";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import TwoWheelPage from "./pages/TwoWheelPage";
 
 function App() {
-  const [t,i18n] = useTranslation("global")
+  const [t, i18n] = useTranslation("global");
   const handleChangeLanguage = () => {
-    const newLang = i18n.language === 'en' ? 'ar' : 'en';
+    const newLang = i18n.language === "en" ? "ar" : "en";
     i18n.changeLanguage(newLang);
   };
   const [darkMode, setDarkMode] = useState(true);
@@ -22,17 +18,38 @@ function App() {
   };
 
   return (
-    <div>
-      <Navbar t={t} i18n={i18n} handleChangeLanguage={handleChangeLanguage} darkMode={darkMode}  toggleDark={toggleDark}/>
-      <Home t={t} darkMode={darkMode} />
-      <AboutUs t={t} darkMode={darkMode}/>
-      <Products t={t} darkMode={darkMode}/>
-      {/* <Newsletter /> */}
-      <Contact t={t} darkMode={darkMode}/>
-      <ChatBot t={t}/>
-      <Footer t={t} darkMode={darkMode}/>
-    </div>
+    <Router>
+      <Navbar
+        t={t}
+        i18n={i18n}
+        handleChangeLanguage={handleChangeLanguage}
+        darkMode={darkMode}
+        toggleDark={toggleDark}
+      />
+      <Routes>
+        <Route
+          exact
+          path="/"
+          element={<HomePage darkMode={darkMode} t={t} />}
+        />
+        <Route
+          exact
+          path="/two-wheel"
+          element={<TwoWheelPage darkMode={darkMode} t={t} />}
+        />
+        <Route
+          exact
+          path="/three-wheel"
+          element={<TwoWheelPage darkMode={darkMode} t={t} />}
+        />
+        <Route
+          exact
+          path="/electric-bike"
+          element={<TwoWheelPage darkMode={darkMode} t={t} />}
+        />
+      </Routes>
+    </Router>
   );
 }
 
-export default (App);
+export default App;

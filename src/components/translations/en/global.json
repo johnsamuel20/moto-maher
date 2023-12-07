@@ -12,5 +12,8 @@
         "line1" : "In line with the strategic planning of the new republic in the use of clean energy." ,
         "line2" : "Al Maher Group of Companies is moving in the same rational direction as the state by working to provide light personal transportation that runs on gas and electricity",
         "line3" : "We dream of a 100% Egyptian product in Egypt and the rest of the African continent"
+    },
+    "vehicles" : {
+        "title" : "Show Products"
     }
 }
